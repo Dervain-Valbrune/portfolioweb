@@ -10,10 +10,11 @@ body {
 
 header {
     background-color: #002B5B;
-    height: 200px;
+    height: auto;
     color: white;
     text-align: center;
     font-family: 'Mynerve', cursive;
+    padding-bottom: 10px;
 }
 
 header h1 {
@@ -39,7 +40,7 @@ nav {
 nav li {
     display: inline-block;
     padding: 10px 30px 0 0;
-    font-size: 20px;
+    font-size: clamp(12px, 3vw, 20px);
 }
 
 nav a {
@@ -76,6 +77,19 @@ nav a:hover {
     border-radius: 50%;
     border: 2px solid white;
     box-shadow: 2px 2px 5px grey;
+    transition: border-radius .4s ease-in .5s;
+    /* transition-property: border-radius;
+    transition-duration: .4s;
+    transition-timing-function:ease-in;
+    transition-delay: .5s; */
+}
+.wrapper aside img:hover {
+    border-radius: 15%;
+    transition: border-radius .4s cubic-bezier(0.175, 0.885, 0.32, 1.275) .3s;
+    /* transition-property: border-radius;
+    transition-duration: .4s;
+    transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-delay: .3s; */
 }
 
 /* 
@@ -270,12 +284,12 @@ input[type="submit"] {
         display: none;
     }
 
-    nav a {
+    /* nav a {
         font-size: 27px;
-    }
+    } */
 
     nav {
-        height: 57px;
+        height: 44px;
         z-index: 1;
     }
 
