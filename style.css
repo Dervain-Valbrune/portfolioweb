@@ -92,12 +92,6 @@ nav a:hover {
     transition-delay: .3s; */
 }
 
-/* 
-.wrapper aside img:hover{
-    border-radius: 10%;
-    
-} */
-
 .title {
     padding: 5px;
     box-shadow: 1px 1px 5px grey;
@@ -200,10 +194,16 @@ footer img {
     position: fixed;
     height: 67px;
     width: 32px;
-    /* background-color: #002B5B; */
-    border: .5px dotted #bfbfbf;
-    top: 500px;
-    left: 80%;
+    border: .5px dotted #EA5455;
+    top: 50%;
+    left: 90%;
+    box-shadow: 0 0 0 0 #EA5455;
+    animation: anim 1s infinite;
+}
+@keyframes anim {
+    100%{
+    box-shadow: 0 0 0 15px rgb(255, 255, 255, .01);
+    }
 }
 
 img[alt*="res"] {
