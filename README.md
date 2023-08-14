@@ -1,4 +1,4 @@
-# Porject HTML CSS 
+# Project HTML CSS 
 ## Just a preview
 
 - [x] On desktop
